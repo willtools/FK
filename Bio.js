@@ -5,9 +5,10 @@ function getRandomInt(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
 }
 function gen(){
-      var umur = ["22","23","24","25","26","27"];
+      var umr = ["22","23","24","25","26","27"];
       var sym = ["😘","🥰","😍","💦","👙","😝","🥴","😜","🔞"];
-      var tag = ["\n✻","\n✼","\n✾","\n✿","\n❀","\n❁","\n❃","\n❇","\n❈","\n❉","\n❊","\n✣","\n✤"];
+      var tag = ["✻","✼","✾","✿","❀","❁","❃","❇","❈","❉","❊","✣","✤"];
+      Rumr = capitalize(umr[getRandomInt(0, umr.length)])
       Rsym = capitalize(sym[getRandomInt(0, sym.length)]);
       Rtag = capitalize(tag[getRandomInt(0, tag.length)]);
 
@@ -21,15 +22,15 @@ function gen(){
 
       var Kde =[" Kontaktiere mich hier ⬇⬇"," Weitere Informationen über mich ⬇⬇"," Komm, sprich mit mir auf meinem Profil ⬇⬇"," Chatte und ruf mich an oder finde mich ⬇⬇"," Warten auf einen Sexpartner 👄 Lass uns unartig werden ⬇⬇"," Kontakt hier! 📩 Lass uns unartig werden ⬇⬇"," Klicken Sie hier für den Live-Sex ⬇⬇"," Sehen Sie mehr mein Nacktfoto und Video ⬇⬇"," Schauen Sie sich die Vorschau meines neuesten Videos an ⬇⬇"," Ich brauche ein Date, Find and Call Me ⬇⬇"," Wenn Sie mich suchen, kontaktieren Sie mich hier! alles privat ⬇⬇"];
 
-      var Bfr = '⭐ ℕ𝕆𝕌𝕍𝔼𝔸𝕌 ℂ𝕆𝕄ℙ𝕋𝔼 ⭐\n' + '✥ Seule ' + '|' + ' ' + capitalize(umur[getRandomInt(0, umur.length)]) + '\n' + '✥ Je suis folle fille ' + Rsym + Rtag + capitalize(Kfr[getRandomInt(0, Kfr.length)]);
+      var Bfr = '⭐ ℕ𝕆𝕌𝕍𝔼𝔸𝕌 ℂ𝕆𝕄ℙ𝕋𝔼 ⭐\n' + Rtag + ' Seule ' + '|' + ' ' + Rumr + '\n' + Rtag + ' Je suis folle fille ' + Rsym + '\n' + Rtag + capitalize(Kfr[getRandomInt(0, Kfr.length)]);
 
-      var Bus = '⭐ ℕ𝔼𝕎 𝔸ℂℂ𝕆𝕌ℕ𝕋 ⭐\n' + '✥ Single ' + '|' + ' ' + capitalize(umur[getRandomInt(0, umur.length)]) + '\n' + '✥ Im crazy girl ' + Rsym + Rtag + capitalize(Kus[getRandomInt(0, Kus.length)]);
+      var Bus = '⭐ ℕ𝔼𝕎 𝔸ℂℂ𝕆𝕌ℕ𝕋 ⭐\n' + Rtag + ' Single ' + '|' + ' ' + Rumr + '\n' + Rtag + ' Im crazy girl ' + Rsym + '\n' + Rtag + capitalize(Kus[getRandomInt(0, Kus.length)]);
 
-      var Bit = '⭐ ℕ𝕌𝕆𝕍𝕆 𝔸ℂℂ𝕆𝕌ℕ𝕋 ⭐\n' + '✥ Singola ' + '|' + ' ' + capitalize(umur[getRandomInt(0, umur.length)]) + '\n' + '✥ Sono pazza ragazza ' + Rsym + Rtag + capitalize(Kit[getRandomInt(0, Kit.length)]);
+      var Bit = '⭐ ℕ𝕌𝕆𝕍𝕆 𝔸ℂℂ𝕆𝕌ℕ𝕋 ⭐\n' + Rtag + ' Singola ' + '|' + ' ' + Rumr + '\n' + Rtag + ' Sono pazza ragazza ' + Rsym + '\n' + Rtag + capitalize(Kit[getRandomInt(0, Kit.length)]);
 
-      var Bjp = '⭐ 新しいアカウント ⭐\n' + '✥ 独身 ' + '|' + ' ' + capitalize(umur[getRandomInt(0, umur.length)]) + '\n' + '✥ 私は狂った女の子です ' + Rsym + Rtag + capitalize(Kjp[getRandomInt(0, Kjp.length)]);
+      var Bjp = '⭐ 新しいアカウント ⭐\n' + Rtag + ' 独身 ' + '|' + ' ' + Rumr + '\n' + Rtag + ' 私は狂った女の子です ' + Rsym + '\n' + Rtag + capitalize(Kjp[getRandomInt(0, Kjp.length)]);
 
-      var Bde = '⭐ ℕ𝔼𝕌𝔼𝕊 𝕂𝕆ℕ𝕋𝕆 ⭐\n' + '✥ Einzel ' + '|' + ' ' + capitalize(umur[getRandomInt(0, umur.length)]) + '\n' + '✥ Ich bin verrücktes Mädchen ' + Rsym + Rtag + capitalize(Kde[getRandomInt(0, Kde.length)]);
+      var Bde = '⭐ ℕ𝔼𝕌𝔼𝕊 𝕂𝕆ℕ𝕋𝕆 ⭐\n' + Rtag + ' Einzel ' + '|' + ' ' + Rumr + '\n' + Rtag + ' Ich bin verrücktes Mädchen ' + Rsym + '\n' + Rtag + capitalize(Kde[getRandomInt(0, Kde.length)]);
 
       if(document.getElementById('option').value == "FR") {
             document.getElementById('result').innerHTML = Bfr
