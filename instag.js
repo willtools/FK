@@ -22,6 +22,6 @@ function copy1(){
       document.execCommand("copy")
       }
 function copy2(){
-      document.getElementById("result1").select(),
+      document.getElementById("result2").select(),
       document.execCommand("copy")
 };
