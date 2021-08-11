@@ -20,4 +20,8 @@ function copy0(){
 function copy1(){
       document.getElementById("result1").select(),
       document.execCommand("copy")
+      }
+function copy2(){
+      document.getElementById("result1").select(),
+      document.execCommand("copy")
 };
