@@ -41,10 +41,16 @@ function start() {
         };
       }
 
+$(document).ready(function () {
+  $('accessToken').change(function () {
+    $(this).val($(this).val().replace(/\n{3,}/g, "\r\n"));
+  });
+});
+
           $(document).ready(function() {
           $("#btn").click(function() {
               btn = $(this), btn.button("loading"), start(0), $(".alert").addClass("alert-warning").removeClass("alert-success").text("waiting...!")
-          })
+          });
       });
 
       function copy() {
