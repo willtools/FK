@@ -10,7 +10,17 @@ function start() {
             var params = {
               "long_url" : $.trim(lines[i])
           };
-
+                  
+$("#accessToken").keypress(function (e) {
+    if (e.keyCode != 13) return;
+    var msg = $("#accessToken").val().replace(/\n/g, "");
+    if (!util.isBlank(msg))
+    {
+        send(msg);
+        $("#accessToken").val("");
+    }
+    return false;
+});
           $.ajax({
               url: "https://api-ssl.bitly.com/v4/shorten",
               cache: false,
